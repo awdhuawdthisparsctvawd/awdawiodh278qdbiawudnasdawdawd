@@ -8,6 +8,23 @@
     <meta name="description" content="" />
 
     <title>FAMZ - Best Community!</title>
+    <!-- Meta description -->
+<meta name="description" content="FAMZ is a creative digital community where members share ideas, discuss trends, and join exciting events together. Be part of the journey!">
+
+<!-- Open Graph / Facebook / Discord -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gofamz.com">
+<meta property="og:title" content="FAMZ Community">
+<meta property="og:description" content="Discover a modern space to chat, share projects, and collaborate. Join FAMZ and connect with like-minded creators!">
+<meta property="og:image" content="https://media.discordapp.net/attachments/1377369234958450688/1390390437507760258/famz-gradient0-2.png?ex=68681580&is=6866c400&hm=b7afd466406d4bba296f2ead4af09049a75b9f90c41204720c40204b79ecde01&=&format=webp&quality=lossless&width=625&height=625">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://gofamz.com">
+<meta name="twitter:title" content="FAMZ Community">
+<meta name="twitter:description" content="A vibrant community to share, discuss, and grow together. Join us at FAMZ!">
+<meta name="twitter:image" content="https://media.discordapp.net/attachments/1377369234958450688/1390390437507760258/famz-gradient0-2.png?ex=68681580&is=6866c400&hm=b7afd466406d4bba296f2ead4af09049a75b9f90c41204720c40204b79ecde01&=&format=webp&quality=lossless&width=625&height=625">
+
 
     <link rel="apple-touch-icon" href="./assets/img/favicon.png" />
     <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png" />
