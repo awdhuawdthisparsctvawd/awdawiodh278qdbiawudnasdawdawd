@@ -19,7 +19,7 @@
 <meta property="og:image" content="https://media.discordapp.net/attachments/1377369234958450688/1390390437507760258/famz-gradient0-2.png?ex=68681580&is=6866c400&hm=b7afd466406d4bba296f2ead4af09049a75b9f90c41204720c40204b79ecde01&=&format=webp&quality=lossless&width=625&height=625">
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:url" content="https://gofamz.com">
 <meta name="twitter:title" content="FAMZ Community">
 <meta name="twitter:description" content="A vibrant community to share, discuss, and grow together. Join us at FAMZ!">
