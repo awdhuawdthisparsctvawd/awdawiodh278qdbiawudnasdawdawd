@@ -1,8 +1,6 @@
 <?php
 ob_start(function($buffer) {
-    $buffer = preg_replace('/<!--(?!\[if).*?-->/', '', $buffer);
-    $buffer = preg_replace('/\s{2,}/', ' ', $buffer);
-    return $buffer;
+    return preg_replace('/\s+/', ' ', $buffer);
 });
 ?>
 <!DOCTYPE html>
