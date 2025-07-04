@@ -1,5 +1,10 @@
 <?php
-
+ob_start(function ($buffer) {
+    $buffer = preg_replace('/<!--(?!\[if).*?-->/', '', $buffer);
+    $buffer = str_replace(["\r", "\n", "\t"], '', $buffer);
+    $buffer = preg_replace('/ {2,}/', ' ', $buffer);
+    return $buffer;
+});
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
