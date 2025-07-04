@@ -1,7 +1,5 @@
 <?php
-ob_start(function($buffer) {
-    return preg_replace('/\s+/', ' ', $buffer);
-});
+
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -1001,4 +999,3 @@ ob_start(function($buffer) {
 </body>
 
 </html>
-<?php ob_end_flush(); ?>
