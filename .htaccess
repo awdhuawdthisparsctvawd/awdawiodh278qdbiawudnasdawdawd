@@ -1,16 +1,16 @@
 RewriteEngine On
 
-# Prioritas: cek file/folder nyata
+# Kalau request ke file atau folder yang nyata, lewatin rewrite
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Hilangkan .php
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php [L]
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(.+)$ $1.php [L]
 
 # Hilangkan .html
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [L]
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)$ $1.html [L]
 
-# Fallback semua ke index.php kalau gak ada file
-RewriteRule ^(.*)$ index.php [L,QSA]
+# Fallback: semua request dilempar ke index.php
+RewriteRule ^ index.php [L]
