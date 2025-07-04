@@ -1,16 +1,1 @@
-RewriteEngine On
 
-# Kalau request ke file atau folder yang nyata, lewatin rewrite
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Hilangkan .php
-RewriteCond %{DOCUMENT_ROOT}/$1.php -f
-RewriteRule ^(.+)$ $1.php [L]
-
-# Hilangkan .html
-RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-RewriteRule ^(.+)$ $1.html [L]
-
-# Fallback: semua request dilempar ke index.php
-RewriteRule ^ index.php [L]
