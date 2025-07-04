@@ -1,15 +1,10 @@
 <?php
-ob_start('minify_output');
-
-function minify_output($buffer) {
-    // hapus komentar HTML
+ob_start(function($buffer) {
     $buffer = preg_replace('/<!--(?!\[if).*?-->/', '', $buffer);
-    // hapus spasi & newline berlebih
-    $buffer = preg_replace('/\s+/', ' ', $buffer);
+    $buffer = preg_replace('/\s{2,}/', ' ', $buffer);
     return $buffer;
-}
+});
 ?>
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
